@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif|Roboto|Indie+Flower|News+Cycle|La+Belle+Aurore" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>
+    Random
+  </title>
+</head>
+
+<body>
+  <div id="navigation" class="navigation">
+    <table>
+      <tr>
+        <h2>Mousehouse</h2>
+        <h3>
+          <script>
+          var now = new Date();
+          var hour = now.getHours();
+          if (hour > 18 || hour < 8) {
+            AwakeTimeCheck = "It is mouse awake time!";
+          } else {
+            AwakeTimeCheck = "It is mouse asleep time.";
+          }
+          document.write(AwakeTimeCheck);
+          </script>
+          <br><br><br><br>
+        </h3>
+      </tr>
+      <tr>
+        <h1><a href = "/">Gallery.</a></h1>
+      </tr>
+      <tr>
+        <h1><a href = "/video">Video.</a></h1>
+      </tr>
+      <tr>
+        <h1><a href = "/mice">All the Mice.</a></h1>
+      </tr>
+      <tr>
+        <h1><a href = "/random">Random Mouse.</a></h1>
+      </tr>
+      <tr>
+        <h1><a href = "/shrander">The Shranders.</a></h1>
+      </tr>
+      <tr>
+        <h1><a href = "https://www.instagram.com/sonmifourone/">Mousetagram.</a></h1>
+      </tr>
+    </table>
+  </div>
+
+  <div id="about" class="about">
+    <br>
+    <h1>{{mouse}}</h1>
+    <p>{{mouse_about}}</p>
+    </h2>
+  </div>
+</body>
+</html>

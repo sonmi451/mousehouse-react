@@ -1,0 +1,162 @@
+body {
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	font-size: 20px;
+	font-family: 'Droid Serif', serif;
+	font-weight: bold;
+	color: #5a6472;
+}
+
+.navigation a:link {
+	text-decoration: none;
+	color: #5a6472;
+}
+
+.navigation a:visited{
+	color: #5a6472;
+}
+
+.navigation a:hover{
+	color: #cee6ff;
+	font-style: italic;
+}
+
+.navigation {
+	position: fixed;
+	width: 300px;
+	text-align: right;
+}
+
+.navigation h1 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 20px;
+	font-family: 'Droid Serif', serif;
+	font-weight: bold;
+}
+
+.navigation h2 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+	padding-right: -100px;
+}
+
+.navigation h3 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 15px;
+	font-family: 'Roboto', serif;
+	font-weight: bold;
+	font-style: italic;
+	padding-right: -100px;
+}
+
+.gallery {
+	position: center;
+	margin-left: 350px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-clip: content-box;
+}
+
+.gallery img {
+	position: relative;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.live {
+	position: relative;
+	margin-left: 350px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-clip: content-box;
+}
+
+.live iframe {
+	position: relative;
+	text-align: center;
+	height: 400px;
+	width: 500px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.about {
+	position: relative;
+	margin-left: 400px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #444d5b;
+}
+
+.about a:link {
+	text-decoration: none;
+	color: #2d4556;
+}
+
+.about a:visited{
+	color: #2d4556;
+}
+
+.about a:hover{
+	color: #bec9d1;
+	text-decoration: none;
+}
+
+.about h1 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 40px;
+	font-family:'Roboto';
+	padding-left: 20px;
+}
+
+.about h2 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 22px;
+	font-family:'Droid Serif';
+	padding-left: 20px;
+}
+
+.about p {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 22px;
+	font-family:'La Belle Aurore';
+	padding-right: 200px;
+	padding-left: 25px;
+}
+
+.about img {
+	position: relative;
+	text-align: center;
+	width: 250px;
+	height: 250px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
