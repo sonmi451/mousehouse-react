@@ -1,0 +1,122 @@
+body {
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	background-color: #F5F5F5;
+	color: #212120;
+}
+
+div.navigation {
+	position: fixed;
+	width: 300px;
+	text-align: right;
+	color: inherit;
+}
+
+div.about {
+	position: relative;
+	margin-left: 380px;
+	font-size: 40px;
+	color: inherit;
+	padding-right: 50px;
+}
+
+a:link {
+	text-decoration: none;
+	color: inherit;
+}
+
+a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+
+a:hover{
+	color: #6588A3;
+	text-decoration: none;
+}
+
+h1 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 40px;
+	font-family:'Roboto',sans-serif;
+	padding-right: inherit;
+}
+
+h2 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 25px;
+	font-family:'Roboto', sans-serif;
+}
+
+h3 {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 20px;
+	font-family:'Droid Serif', serif;
+	padding-right: inherit;
+}
+
+h4 {
+	position: inherit;
+	text-align: right;
+	color: inherit;
+	font-size: 17px;
+	font-family:'Roboto', sans-serif;
+	padding-right: inherit;
+	text-decoration: bold;
+	line-height: 120%;
+}
+
+ul {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 20px;
+	font-family:'Droid Serif', serif;
+	padding-right: inherit;
+}
+
+p {
+	position: relative;
+	text-align: inherit;
+	color: inherit;
+	font-size: 20px;
+	font-family:'Shadows Into Light', sans-serif;
+	padding-right: inherit;
+}
+
+img {
+	position: relative;
+	text-align: center;
+	width: 400px;
+	height: 400px;
+	padding: 20px 20px;
+}
+
+img#gallery {
+	width: 250px;
+	height: 250px;
+}
+
+button {
+	background-color: #6588A3;
+	color: #F5F5F5;
+	border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button#shrand-away {
+	display: none;
+}
