@@ -1,79 +1,78 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
 
 ////////////////////////////////////////////////////////////////////////////////
 // Variables ///////////////////////////////////////////////////////////////////
 
 const elements = {
-  shranderAwayButton: document.getElementById("shrand-away"),
-  congratsText: document.getElementById("congrats"),
-  shranderPic: document.getElementById("shrand-pic"),
-  about: document.getElementById("about")
-};
-
-const pics = {
-  pic1: "./_Apollo_Buran_Mol.jpg",
-  pic2: "./_Luna1.jpg",
-  pic3: "./_Luna2.jpg",
-  pic4: "./_Mol_Buran_Kosmos.jpg",
-  pic5: "./_Mol_Zena_Kosmos.jpg",
-  pic6: "./_Mol_Zena.jpg",
-  pic7: "./_Mol1.jpg",
-  pic8: "./_Mol2.jpg",
-  pic9: "./_Mol3.jpg",
-  pic10: "./_Mol4.jpg",
-  pic11: "./_Mol5.jpg",
-  pic12: "./_Mol6.jpg",
-  pic13: "./_Mol7.jpg",
-  pic14: "./_Mol8.jpg",
-  pic15: "./_Mol9.jpg",
-  pic16: "./_Mol10.jpg",
-  pic17: "./_Mol11.jpg",
-  pic18: "./_Mol12.jpg",
-  pic19: "./_Mol13.jpg",
-  pic20: "./_Mol14.jpg",
-  pic21: "./_Mol15.jpg",
-  pic22: "./_Mol16.jpg",
-  pic23: "./_Mol17.jpg",
-  pic24: "./_Mol18.jpg",
-  pic25: "./_Mol19.jpg",
-  pic26: "./_Mol20.jpg",
-  pic27: "./_Mol21.jpg",
-  pic28: "./_Mol22.jpg",
-  pic29: "./_SaturnV_Mol.jpg",
-  pic30: "./_Shranders.jpg",
-  pic31: "./_Yorki1.jpg",
-  pic32: "./_Yorki2.jpg",
-  pic33: "./_Yorki3.jpg",
-  pic34: "./_Yorki4.jpg",
-  pic35: "./_Zena1.jpg",
-  pic36: "./_Zena3.jpg",
-  pic37: "./_Saturn3.jpg",
+  congratsText: document.getElementById('congrats'),
+  shranderPic: document.getElementById('shrand-pic'),
+  about: document.getElementById('about')
 };
 
 // Mouse list
 const mice = {
-  sputnik: "Sputnik",
-  snapdragon: "Snapdragon",
-  kraken: "Kraken",
-  soyuz: "Soyuz",
-  vostok: "Vostok",
-  zvezda: "Zvezda",
-  salyut: "Salyut",
-  mir: "Mir",
-  almaz: "Almaz",
-  zarya: "Zarya",
-  skylab: "Skylab",
-  poisk: "Poisk",
-  saturnv: "Saturn V",
-  lunakhod: "Lunakhod",
-  semyorka: "Semyorka",
-  molniya: "Molniya",
-  zenit: "Zenit",
-  kosmos: "Kosmos",
-  buran: "Buran",
-  apollo: "Apollo"
+  sputnik: 'Sputnik',
+  snapdragon: 'Snapdragon',
+  kraken: 'Kraken',
+  soyuz: 'Soyuz',
+  vostok: 'Vostok',
+  zvezda: 'Zvezda',
+  salyut: 'Salyut',
+  mir: 'Mir',
+  almaz: 'Almaz',
+  zarya: 'Zarya',
+  skylab: 'Skylab',
+  poisk: 'Poisk',
+  saturnv: 'Saturn V',
+  lunakhod: 'Lunakhod',
+  semyorka: 'Semyorka',
+  molniya: 'Molniya',
+  zenit: 'Zenit',
+  kosmos: 'Kosmos',
+  buran: 'Buran',
+  apollo: 'Apollo'
+};
+
+const pics = {
+  pic1: './_Apollo_Buran_Mol.jpg',
+  pic2: './_Luna1.jpg',
+  pic3: './_Luna2.jpg',
+  pic4: './_Mol_Buran_Kosmos.jpg',
+  pic5: './_Mol_Zena_Kosmos.jpg',
+  pic6: './_Mol_Zena.jpg',
+  pic7: './_Mol1.jpg',
+  pic8: './_Mol2.jpg',
+  pic9: './_Mol3.jpg',
+  pic10: './_Mol4.jpg',
+  pic11: './_Mol5.jpg',
+  pic12: './_Mol6.jpg',
+  pic13: './_Mol7.jpg',
+  pic14: './_Mol8.jpg',
+  pic15: './_Mol9.jpg',
+  pic16: './_Mol10.jpg',
+  pic17: './_Mol11.jpg',
+  pic18: './_Mol12.jpg',
+  pic19: './_Mol13.jpg',
+  pic20: './_Mol14.jpg',
+  pic21: './_Mol15.jpg',
+  pic22: './_Mol16.jpg',
+  pic23: './_Mol17.jpg',
+  pic24: './_Mol18.jpg',
+  pic25: './_Mol19.jpg',
+  pic26: './_Mol20.jpg',
+  pic27: './_Mol21.jpg',
+  pic28: './_Mol22.jpg',
+  pic29: './_SaturnV_Mol.jpg',
+  pic30: './_Shranders.jpg',
+  pic31: './_Yorki1.jpg',
+  pic32: './_Yorki2.jpg',
+  pic33: './_Yorki3.jpg',
+  pic34: './_Yorki4.jpg',
+  pic35: './_Zena1.jpg',
+  pic36: './_Zena3.jpg',
+  pic37: './_Saturn3.jpg',
 };
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -99,34 +98,34 @@ class Navigation extends React.Component {
   playShranderGame () {
     ReactDOM.render(
       <ShranderGame />,
-      document.getElementById("about")
+      document.getElementById('about')
     );
   }
 
   viewGallery () {
     ReactDOM.render(
       <RandomGallery />,
-      document.getElementById("about")
+      document.getElementById('about')
     );
   }
 
   viewMouseList () {
     ReactDOM.render(
       <MouseList />,
-      document.getElementById("about")
+      document.getElementById('about')
     );
   }
 
   render() {
     return (
       <div>
-      <h1>Mousehouse</h1>
-      <h4>
-      <a id="mouselink" onClick={this.viewGallery}>gallery</a> |&nbsp;
-      <a id="mouselink" onClick={this.playShranderGame}> the shranders</a> |&nbsp;
-      <a id="mouselink" onClick={this.viewMouseList}> all the mice</a> |&nbsp;
-      <a id="mouselink" href="https://www.instagram.com/sonmifourone/"> mousetagram</a>
-      </h4>
+        <h1>Mousehouse</h1>
+        <h4>
+          <a id='mouselink' onClick={this.viewGallery}>gallery</a> |&nbsp;
+          <a id='mouselink' onClick={this.playShranderGame}> the shranders</a> |&nbsp;
+          <a id='mouselink' onClick={this.viewMouseList}> all the mice</a> |&nbsp;
+          <a id='mouselink' href='https://www.instagram.com/sonmifourone/'> mousetagram</a>
+        </h4>
       </div>
     );
   }
@@ -139,9 +138,9 @@ class AwakeTime extends React.Component {
     var now = new Date();
     var hour = now.getHours();
     if (hour > 18 || hour < 8) {
-      awakeTimeCheck = "It is mouse awake time!";
+      awakeTimeCheck = 'It is mouse awake time!';
     } else {
-      awakeTimeCheck = "It is mouse asleep time.";
+      awakeTimeCheck = 'It is mouse asleep time.';
     }
     return (
       <h3>{awakeTimeCheck}</h3>
@@ -165,7 +164,7 @@ class RandomGallery extends React.Component {
       var randomMouse = miceGallery[Math.floor(Math.random()*miceGallery.length)];
       var randomIndex = miceGallery.indexOf(randomMouse)
       miceGallery.splice(randomIndex, 1);
-      shuffleList.push(<img id="gallery" src={randomMouse} />)
+      shuffleList.push(<img alt='What a lovely mouse' id='gallery' src={randomMouse} />)
     }
     return (
       shuffleList
@@ -207,14 +206,13 @@ class ShranderGame extends React.Component {
     this.handleSelectYorki = this.handleSelectYorki.bind(this);
     this.handleSelectNone = this.handleSelectNone.bind(this);
     this.shrandomiser = this.shrandomiser.bind(this);
-    this.state = { title: "Choose your Shrander!",
-                  image: "./blank.jpg",
-                  };
-  }
+    this.state = { title: 'Choose your Shrander!',
+                  image: './blank.jpg',
+                  shrander: null };
+                }
 
   shrandomiser() {
     var ran = Math.random();
-    var shrander;
     if (ran < 0.5) {
       this.handleSelectYorki();
     } else {
@@ -223,37 +221,37 @@ class ShranderGame extends React.Component {
   }
 
   handleSelectMol() {
-    document.getElementById("shrand-away").style.display = "inline";
-    this.setState({title: "Well done on choosing Molniya as your shrander!",
-                  image: pics.pic23,
-                 });
-  }
+    this.setState({ title: 'Well done on choosing Molniya as your shrander!',
+                    image: pics.pic23,
+                    shrander: 'Molniya' });
+                  }
 
   handleSelectYorki() {
-    document.getElementById("shrand-away").style.display = "inline";
-    this.setState({title: "Well done on choosing Semyorka as your shrander!",
+    this.setState({ title: 'Well done on choosing Semyorka as your shrander!',
                   image: pics.pic34,
-                });
-              }
+                  shrander: 'Semyorka' });
+                }
 
   handleSelectNone() {
-    document.getElementById("shrand-away").style.display = "none";
-    this.setState({title: "Try again for your Shrander!",
-                  image: "./blank.jpg",
-                });
-  }
+    this.setState({ title: 'Try again for your Shrander!',
+                    image: './blank.jpg',
+                    shrander: null });
+                  }
 
   render() {
+
+    const shranderAwayButton = <button id='shrand-away' onClick={this.handleSelectNone}>Ah it's too cute take it away!</button>
+
     return (
       <div>
-      <h2>{this.state.title}</h2>
-      <button onClick={this.handleSelectMol}>Molniya</button>&nbsp;
-      <button onClick={this.handleSelectYorki}>Semyorka</button>&nbsp;
-      <button onClick={this.shrandomiser}>Give me a random one!</button>
-      <br />
-      <img id="shrand-pic" src={this.state.image} />
-      <br />
-      <button id="shrand-away" onClick={this.handleSelectNone}>Ah it's too cute take it away!</button>
+        <h2>{this.state.title}</h2>
+        <button onClick={this.handleSelectMol}>Molniya</button>&nbsp;
+        <button onClick={this.handleSelectYorki}>Semyorka</button>&nbsp;
+        <button onClick={this.shrandomiser}>Give me a random one!</button>
+        <br />
+        <img id='shrand-pic' alt='a shrander!' src={this.state.image} />
+        <br />
+        {this.state.shrander != null ? shranderAwayButton : null }
       </div>
     );
   }
@@ -264,15 +262,15 @@ class ShranderGame extends React.Component {
 
 ReactDOM.render(
   <Navigation />,
-  document.getElementById("navigation")
+  document.getElementById('navigation')
 );
 
 ReactDOM.render(
   <AwakeTime />,
-  document.getElementById("time")
+  document.getElementById('time')
 );
 
 ReactDOM.render(
   <RandomGallery />,
-  document.getElementById("about")
+  document.getElementById('about')
 );
